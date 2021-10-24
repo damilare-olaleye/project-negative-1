@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator App with Selenium</title>
+</head>
+
+
+<body>
+	<h1> Calculator App with Selenium Chrome Test </h1>
+
+	<h3> Addition </h3>
+	<form action="http://localhost:8080/add" method="POST" target="addResult">
+		<table>
+			<tr>
+				<td>First Number:</td>
+				<td><input id="addNum1" type="number" step="0.01" name="firstNumber" placeholder="Input Number" /></td>
+			</tr>
+			<tr>
+				<td>Second Number:</td>
+				<td><input id="addNum2" type="number" step="0.01" name="secondNumber" placeholder="Input Number" /></td>
+			</tr>
+			<tr>
+				<td><button id="addButton" type="submit"> Add Numbers</td>
+			</tr>
+		</table>
+	</form>
+	<iframe name="addResult" frameborder="0" height="35"></iframe>
+
+	<h3> Subtraction </h3>
+	<form action="http://localhost:8080/subtract" method="POST" target="subtractResult">
+		<table>
+			<tr>
+				<td>First Number:</td>
+				<td><input id="subtractNum1" type="number" step="0.01" name="firstNumber" placeholder="Input Number" />
+				</td>
+			</tr>
+			<tr>
+				<td>Second Number:</td>
+				<td><input id="subtractNum2" type="number" step="0.01" name="secondNumber" placeholder="Input Number" />
+				</td>
+			</tr>
+			<tr>
+				<td><button id="subtractButton" type="submit">Subtract Numbers</td>
+			</tr>
+		</table>
+	</form>
+	<iframe name="subtractResult" frameborder="0" height="35"></iframe>
+
+	<h3> Division </h3>
+	<form action="http://localhost:8080/divide" method="POST" target="divideResult">
+		<table>
+			<tr>
+				<td>First Number:</td>
+				<td><input id="divideNum1" type="number" step="0.01" name="firstNumber" placeholder="Input Number" />
+				</td>
+			</tr>
+			<tr>
+				<td>Second Number:</td>
+				<td><input id="divideNum2" type="number" step="0.01" name="secondNumber" placeholder="Input Number" />
+				</td>
+			</tr>
+			<tr>
+				<td><button id="divideButton" type="submit">Divide Numbers</td>
+			</tr>
+		</table>
+	</form>
+	<iframe name="divideResult" frameborder="0" height="35"></iframe>
+
+	<h3> Multiply </h3>
+	<form action="http://localhost:8080/multiply" method="POST" target="multiplyResult">
+		<table>
+			<tr>
+				<td>First Number:</td>
+				<td><input id="multiplyNum1" type="number" step="0.01" name="firstNumber" placeholder="Input Number" />
+				</td>
+			</tr>
+			<tr>
+				<td>Second Number:</td>
+				<td><input id="multiplyNum2" type="number" step="0.01" name="secondNumber" placeholder="Input Number" />
+				</td>
+			</tr>
+			<tr>
+				<td><button id="multiplyButton" type="submit"> Multiply Numbers</td>
+			</tr>
+		</table>
+	</form>
+	<iframe name="multiplyResult" frameborder="0" height="35"></iframe>
+
+	<h3> Mod </h3>
+	<form action="http://localhost:8080/mod" method="POST" target="modResult">
+		<table>
+			<tr>
+				<td>First Number:</td>
+				<td><input id="modNum1" type="number" step="0.01" name="firstNumber" placeholder="Input Number" /></td>
+			</tr>
+			<tr>
+				<td>Second Number:</td>
+				<td><input id="modNum2" type="number" step="0.01" name="secondNumber" placeholder="Input Number" /></td>
+			</tr>
+			<tr>
+				<td><button id="modButton" type="submit">Mod Numbers</td>
+			</tr>
+		</table>
+	</form>
+	<iframe name="modResult" frameborder="0" height="35"></iframe>
+
+</body>
+
+</html>
