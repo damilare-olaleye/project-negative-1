@@ -95,7 +95,7 @@ public class Main {
 		driver.switchTo().defaultContent();
 		
 		// closing the driver
-		//driver.close();
+		driver.close();
 
 	}
 
