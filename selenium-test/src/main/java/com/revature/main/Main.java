@@ -31,6 +31,7 @@ public class Main {
 		WebElement addOutput = driver.findElement(By.tagName("pre"));
 		String addFrameText = addOutput.getText();
 		System.out.println("Add frame prints: " + addFrameText);
+		Thread.sleep(1000);
 		driver.switchTo().defaultContent();
 		
 		// Subtract Elements
@@ -46,6 +47,7 @@ public class Main {
 		WebElement subtractOutput = driver.findElement(By.tagName("pre"));
 		String subtractFrameText = subtractOutput.getText();
 		System.out.println("Subtract frame prints: " + subtractFrameText);
+		Thread.sleep(1000);
 		driver.switchTo().defaultContent();
 
 		// Locate the 2 input elements and button for dividing numbers
@@ -61,9 +63,9 @@ public class Main {
 		WebElement divideOutput = driver.findElement(By.tagName("pre"));
 		String divideFrameText = divideOutput.getText();
 		System.out.println("Divide frame prints: " + divideFrameText);
+		Thread.sleep(1000);
 		driver.switchTo().defaultContent();
 		
-
 		// Locate the 2 input elements and button for multiplying numbers
 		WebElement multiplyInput1 = driver.findElement(By.id("multiplyNum1"));
 		WebElement multiplyInput2 = driver.findElement(By.id("multiplyNum2"));
@@ -77,7 +79,9 @@ public class Main {
 		WebElement multiplyOutput = driver.findElement(By.tagName("pre"));
 		String multiplyFrameText = multiplyOutput.getText();
 		System.out.println("Multiply frame prints: " + multiplyFrameText);
+		Thread.sleep(1000);
 		driver.switchTo().defaultContent();
+		
 		
 		// input elements for mod numbers
 		WebElement modInput1 = driver.findElement(By.id("modNum1"));
